@@ -57,16 +57,24 @@ On uilise les conditions (IF...= pour vérifier l'age de l'internaute.
 */
 
 // 1- je déclarer l'age de la majorité
+var MajoriteFR = 18;
 
-// 2- je demande son age à l'internaute
+
+// 2- je demande son age à l'internaute en s'assurant que nous avons un nombre
+var age = parseInt(prompt("Indiquez votre âge"));
 
 // 3- je vérifie si l'internaute est majeur
+if (age >= MajoriteFR) {// bienvenue si vrai
+    alert("Bienvenue, vous êtes majeur");
+} else {
         // s'il est majeur => bienvenue
         // s'il est mineur => je lui dit d'aller voir ailleurs
+        alert("Allez voir un autre super site...")
         //                   => et je le redirige sur un autre site
-        (https://developer.mozilla.org/fr/docs/Web/API/window/LOcation)
+        document.location.href= "http://www.darty.com"
+        //(https://developer.mozilla.org/fr/docs/Web/API/window/LOcation)
 
-
+}
 
 var age = prompt ('age');
 if (age >= 18) {
@@ -79,5 +87,6 @@ else {
     document.location.href ="https://www.google.com/webhp?hl=fr&ictx=2&sa=X&ved=0ahUKEwjr6sug7aPcAhXPgVwKHS5aAJoQPQgD";
  }
 
+ 
 
 
